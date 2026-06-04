@@ -1,30 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Website Ahsanu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahsanu - Profil Pribadi</title>
+
 <style>
-body{
-  background:#1e1e1e;
-  color:white;
-  text-align:center;
-  font-family:sans-serif;
-  padding-top:100px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-button{
-  padding:12px 20px;
-  font-size:18px;
+
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+header{
+padding:60px 20px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+background:white;
+margin:auto;
+margin-bottom:20px;
+}
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.subtitle{
+opacity:.8;
+}
+
+section{
+padding:50px 20px;
+max-width:800px;
+margin:auto;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+margin-top:20px;
+}
+
+a{
+color:#60a5fa;
+text-decoration:none;
+}
+
+footer{
+padding:20px;
+opacity:.7;
 }
 </style>
 </head>
 <body>
 
-<h1>Selamat Datang di Website Ahsanu</h1>
+<header>
 
-<p>Website pertamaku.</p>
+<div class="profile"></div>
 
-<button onclick="alert('Halo!')">
-Klik Saya
-</button>
+<h1>Ahsanu</h1>
+
+<p class="subtitle">
+Pelajar • Pembuat Game • Pecinta Teknologi
+</p>
+
+</header>
+
+<section>
+
+<h2>Tentang Saya</h2>
+
+<div class="card">
+<p>
+Halo, saya Ahsanu.
+Saya suka belajar teknologi, membuat game,
+dan mencoba berbagai proyek kreatif menggunakan HTML, CSS, dan JavaScript.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Proyek Saya</h2>
+
+<div class="card">
+<p>
+🚢 Game Kapal (Dalam Pengembangan)
+</p>
+</div>
+
+<div class="card">
+<p>
+🎮 Game Browser HTML
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Kontak</h2>
+
+<div class="card">
+<p>Email: emailkamu@example.com</p>
+<p>Instagram: @usernamekamu</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Ahsanu
+</footer>
 
 </body>
 </html>
