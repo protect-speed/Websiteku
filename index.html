@@ -14,7 +14,11 @@ box-sizing:border-box;
 
 body{
 font-family:Arial,sans-serif;
-background:#0f172a;
+background:linear-gradient(
+180deg,
+#111827,
+#0f172a
+);
 color:white;
 text-align:center;
 }
@@ -64,6 +68,18 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
+.card a{
+display:block;
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+.card{
+cursor:pointer;
+}
+  
   button{
 background:#2563eb;
 color:white;
@@ -88,6 +104,22 @@ footer{
 padding:20px;
 opacity:.7;
 }
+
+.card{
+animation:fade .5s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+  
 </style>
 </head>
 <body>
@@ -106,35 +138,15 @@ Pelajar • Pembuat Game • Pecinta Teknologi
 
 <section>
 
-<h2>Tentang Saya</h2>
-
-<div class="card">
-<p>
-Halo, saya Ahsanu.
-
-Saya seorang pelajar yang tertarik pada teknologi,
-pemrograman, dan pembuatan game.
-
-Saat ini saya sedang belajar membuat website,
-game browser, dan berbagai proyek kreatif lainnya.
-</p>
-</div>
-
-</section>
-
-<section>
-
-<h2>Proyek Saya</h2>
-
 <div class="card">
 <a href="#">
-🚢 Game Kapal Saya
+🚢 Game Kapal Simulator
 </a>
 </div>
 
 <div class="card">
 <a href="#">
-🎮 Semua Proyek
+🎮 Semua Proyek Saya
 </a>
 </div>
 
@@ -145,38 +157,23 @@ game browser, dan berbagai proyek kreatif lainnya.
 </div>
 
 <div class="card">
-<p>
-🎮 Game Browser HTML
-</p>
+<a href="#">
+🌐 Website Pertama Saya
+</a>
 </div>
-
-</section>
-
-<section>
-
-<h2>Kontak</h2>
-
-  <button onclick="alert('Halo! Terima kasih sudah mengunjungi website saya.')">
-Sapa Saya
-  </button>
 
 <div class="card">
-<p>📧 Email: Belum Ditambahkan</p>
-<p>📸 Instagram: Belum Ditambahkan</p>
+<a href="#">
+📸 Instagram
+</a>
 </div>
-
-</section>
-
-<section>
-
-<h2>Statistik</h2>
 
 <div class="card">
-<p>🌐 Website Pertama Saya</p>
-<p>🚀 Status: Online</p>
-<p>📅 Dibuat Tahun 2026</p>
+<a href="#">
+📧 Hubungi Saya
+</a>
 </div>
-
+  
 </section>
   
 <footer>
